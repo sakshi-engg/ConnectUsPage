@@ -1,250 +1,61 @@
-/* General reset and font import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine:wght@700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7167d2775a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+<body>
 
-html, body {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    place-items: center;
-    background: linear-gradient(315deg, #f3a2a2 0%, #9e9df2 74%);
-}
+    <h1>Connect With Us On <br><br></h1>
+    <div class="wrapper">
+        <div class="button">
+            <a href="https://www.facebook.com/omkar.kolekar.79827" target="_blank">
+                <div class="icon"> <i class="fab fa-facebook-f"></i></div>
+                <span>Facebook</span>
+            </a>
+        </div>
 
-header {
-    text-align: center;
-    margin-bottom: 50px;
-    overflow: hidden;
-    height: 3em;
-}
+        <div class="button">
+            <a href="https://instagram.com/gokultentsupplier?utm_medium=copy_link" target="_blank">
+                <div class="icon"> <i class="fab fa-instagram"></i></div>
+                <span>Instagram</span>
+            </a>
+        </div>
+        
 
-header h1 {
-    font-size: 2.5em;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    display: inline-block;
-    position: relative;
-    font-family: 'Tangerine', serif;
-}
+        <div class="button">
+            <a href="https://www.justdial.com/Ichalkaranji/Gokul-Mandap-Decorators-Igm-Hospital-Rk-nagar-ichalkaranji/0231PX231-X231-161109180234-J5S6_BZDET" target="_blank">
+                <div class="icon"> <i class="fa fa-mobile" aria-hidden="true"></i></div>
+                <span>JustDial</span>
+            </a>
+        </div>
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        <div class="button">
+            <a href="https://youtube.com/@gokulevent7319?si=qToxgjlXbDTmocId" target="_blank">
+                <div class="icon"> <i class="fab fa-youtube white"></i></div>
+                <span>Youtube</span>
+            </a>
+        </div>
 
-.wrapper .button {
-    display: block;
-    height: 60px;
-    width: 60px;
-    margin: 0 15px 50px 15px;
-    background: #fff;
-    border-radius: 50px;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease-in;
-}
+        <div class="button">
+            <a href="https://wa.me/message/JDOX3BNBMO4SA1" target="_blank">
+                <div class="icon"> <i class="fab fa-whatsapp"></i></div>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
 
-.wrapper .button:hover {
-    width: 200px;
-    animation: bounce 1s infinite;
-}
+    <div class="map">
+        <h1>Where we are?</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.386157108984!2d74.
+        44848061035358!3d16.707573384001787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc11d87ccf08b9b%3A0x36d2f401c684946a!2zR29rdWwgdGVudCBzdXBwbGllci4g4KSX4KWL4KSV4KWB4KSzIOCkn-Clh-CkqOCljeCknyDgpLjgpKrgpY3gpLLgpL7gpK_gpLDgpY3gpLg!5e0!3m2!1sen!2sin!4v1716259097493!5m2!1sen!2sin" width="600" height="450" style="border:0;"
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-.wrapper .button .icon {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-}
+    </div>
 
-.wrapper .button:nth-child(1) .icon {
-    background: #4267b2;
-}
-
-.wrapper .button:nth-child(2) .icon {
-    background: linear-gradient(315deg, #fefb65 0%, rgb(224, 17, 120) 74%);
-}
-
-.wrapper .button:nth-child(3) .icon {
-    background: #ffffff;
-}
-
-.wrapper .button:nth-child(4) .icon {
-    background: #179cf0;
-}
-
-.wrapper .button:nth-child(5) .icon {
-    background: red;
-}
-
-.wrapper .button:nth-child(6) .icon {
-    background: #43c553;
-}
-
-.wrapper .button .icon i {
-    font-size: 35px;
-    line-height: 60px;
-}
-
-.wrapper .button span {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 10px;
-    display: none;
-}
-
-.wrapper .button:hover span {
-    display: inline-block;
-}
-
-.map iframe {
-    width: 600px;
-    height: 450px;
-    border: 0;
-    transition: width 0.3s, height 0.3s;
-}
-
-/* Media Queries for Responsiveness */
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-    .wrapper {
-        flex-direction: row;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wrapper .button {
-        margin: 20px;
-    }
-}
-
-/* Small devices (phones, 600px and up) */
-@media (min-width: 600px) and (max-width: 767px) {
-    .wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wrapper .button {
-        margin: 20px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .map iframe {
-        width: 90%;
-        height: 350px;
-    }
-}
-
-/* Extra small devices (phones, less than 600px) */
-@media (max-width: 599px) {
-    .wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wrapper .button {
-        margin: 20px;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    .map iframe {
-        width: 90%;
-        height: 300px;
-    }
-}
-
-/* Devices with width 300px and below */
-@media (max-width: 300px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-
-    .wrapper .button {
-        height: 50px;
-        width: 50px;
-    }
-
-    .wrapper .button .icon i {
-        font-size: 25px;
-        line-height: 50px;
-    }
-
-    .wrapper .button:hover {
-        width: 150px;
-    }
-
-    .wrapper .button span {
-        font-size: 15px;
-        line-height: 50px;
-        margin-left: 5px;
-    }
-
-    .map iframe {
-        width: 80%;
-        height: 250px;
-    }
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-/* Devices with width 200px and below */
-@media (max-width: 200px) {
-    header h1 {
-        font-size: 1em;
-    }
-
-    .wrapper .button {
-        height: 40px;
-        width: 40px;
-    }
-
-    .wrapper .button .icon i {
-        font-size: 20px;
-        line-height: 40px;
-    }
-
-    .wrapper .button:hover {
-        width: 120px;
-    }
-
-    .wrapper .button span {
-        font-size: 12px;
-        line-height: 40px;
-        margin-left: 3px;
-    }
-
-    .map iframe {
-        width: 70%;
-        height: 200px;
-    }
-}
+    
