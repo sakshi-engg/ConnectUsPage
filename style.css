@@ -1,3 +1,4 @@
+/* General reset and font import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine:wght@700&display=swap');
 
 * {
@@ -15,14 +16,6 @@ html, body {
     background: linear-gradient(315deg, #f3a2a2 0%, #9e9df2 74%);
 }
 
-
-.button a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-}
-
 header {
     text-align: center;
     margin-bottom: 50px;
@@ -38,14 +31,6 @@ header h1 {
     position: relative;
     font-family: 'Tangerine', serif;
 }
-
-.header-letter {
-    opacity: 0;
-    position: relative;
-    display: inline-block;
-    animation: drop 0.5s forwards;
-}
-
 
 .wrapper {
     display: flex;
@@ -124,4 +109,142 @@ header h1 {
     display: inline-block;
 }
 
+.map iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+    transition: width 0.3s, height 0.3s;
+}
 
+/* Media Queries for Responsiveness */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .wrapper {
+        flex-direction: row;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper .button {
+        margin: 20px;
+    }
+}
+
+/* Small devices (phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper .button {
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .map iframe {
+        width: 90%;
+        height: 350px;
+    }
+}
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper .button {
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .map iframe {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+/* Devices with width 300px and below */
+@media (max-width: 300px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .wrapper .button {
+        height: 50px;
+        width: 50px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .wrapper .button:hover {
+        width: 150px;
+    }
+
+    .wrapper .button span {
+        font-size: 15px;
+        line-height: 50px;
+        margin-left: 5px;
+    }
+
+    .map iframe {
+        width: 80%;
+        height: 250px;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Devices with width 200px and below */
+@media (max-width: 200px) {
+    header h1 {
+        font-size: 1em;
+    }
+
+    .wrapper .button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .wrapper .button:hover {
+        width: 120px;
+    }
+
+    .wrapper .button span {
+        font-size: 12px;
+        line-height: 40px;
+        margin-left: 3px;
+    }
+
+    .map iframe {
+        width: 70%;
+        height: 200px;
+    }
+}
